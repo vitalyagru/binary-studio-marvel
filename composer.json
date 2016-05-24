@@ -1,10 +1,18 @@
 {
     "name": "DIESEL/binary-studio-marvel",
+    "description": "Files for marvel",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Vitaliy Gruschinsky",
             "email": "grushinsky.vitaliy@gmail.com"
         }
     ],
+    "autoload": {
+      "psr-4": {
+        "Monolog\\": "src/",
+        "Vendor\\Namespace": ""
+      }
+    },
     "require": {}
 }
