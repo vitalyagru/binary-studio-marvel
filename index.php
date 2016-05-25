@@ -4,8 +4,8 @@ require __DIR__ . '/vendor/autoload.php';
 
 class Application {
     public  function start() {
-      $obj = new Binary_studio\Greeting();
-      $obj->say();
+      $greeting = new Binary_studio\Greeting();
+      $greeting->say();
 
       echo '<hr><h2> Задание 1 </h2>';
       echo '<ul>';
@@ -18,9 +18,17 @@ class Application {
       echo '<li>' . Binary_studio\Marvel\England\CaptainBritain::whoami() . '</li>';
       echo '<li>' . Binary_studio\Marvel\Illinois\Beast::whoami() . '</li>';
       echo '</ul>';
+
+      echo '<hr><h2> Задание 3 </h2>';
+      $generate = new Binary_studio\Generator;
+      $generate->printTriangularNumbers(15);
     }
  }
 
 
 $application = new Application();
 $application->start();
+
+
+
+
