@@ -12,7 +12,7 @@ private $_quotes = ['A dream becomes a goal when action is taken toward its achi
             'Success is not in what you have, but who you are.',
             'Illusion is the first of all pleasures.'];
   public function getQuote(){
-    return $this->_quotes[0];
+    return  $this->_quotes [array_rand($this->_quotes, 1 )];
   }
 }
 
