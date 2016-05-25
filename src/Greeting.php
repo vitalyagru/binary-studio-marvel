@@ -21,6 +21,6 @@ class Greeting {
   use RandomQuote;
 
   public function say($name = 'Guest') {
-    echo 'Hi, ' . $name . '! There is a new quote for you: &#10077;' . $this->getQuote() . '&#10078;';
+    return 'Hi, ' . $name . '! There is a new quote for you: &#10077;' . $this->getQuote() . '&#10078;';
   }
 }
