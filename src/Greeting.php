@@ -1,5 +1,5 @@
 <?php
-namespace Marvel;
+namespace Binary_studio;
 trait RandomQuote {
 private $_quotes = ['A dream becomes a goal when action is taken toward its achievement.',
             'It does not matter how slowly you go so long as you do not stop.',

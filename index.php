@@ -1,24 +1,23 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
- // echo Marvel\NamorSubMaries::whoami();
-  // $test = new Hello\Test;
-  // $test->sayHello();
 
 class Application {
     public  function start() {
-      $obj = new Marvel\Greeting();
+      $obj = new Binary_studio\Greeting();
       $obj->say();
 
-      echo '<hr><h2> Задание 2 </h2>';
-      echo Marvel\NamorSubMaries::whoami();
-      echo Marvel\HankPym::whoami();
-      echo Marvel\Wasp::whoami();
-      echo Marvel\Thor::whoami();
-      echo Marvel\IronMan::whoami();
-      echo Marvel\Wonder::whoami();
-      echo Marvel\CaptainBritain::whoami();
-      echo Marvel\Beast::whoami();
+      echo '<hr><h2> Задание 1 </h2>';
+      echo '<ul>';
+      echo '<li>' . Binary_studio\Marvel\Atlantida\NamorSubMaries::whoami() . '</li>';
+      echo '<li>' . Binary_studio\Marvel\NewYork\HankPym::whoami() . '</li>';
+      echo '<li>' . Binary_studio\Marvel\NewJersey\Wasp::whoami() . '</li>';
+      echo '<li>' . Binary_studio\Marvel\Asgard\Thor::whoami() . '</li>';
+      echo '<li>' . Binary_studio\Marvel\NewYork\IronMan::whoami() . '</li>';
+      echo '<li>' . Binary_studio\Marvel\NewJersey\Wonder::whoami() . '</li>';
+      echo '<li>' . Binary_studio\Marvel\England\CaptainBritain::whoami() . '</li>';
+      echo '<li>' . Binary_studio\Marvel\Illinois\Beast::whoami() . '</li>';
+      echo '</ul>';
     }
  }
 
